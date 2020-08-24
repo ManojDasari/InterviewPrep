@@ -1,10 +1,8 @@
 package hackerrankSmartInterviews;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 
 public class FindingCubeRoot {
 
@@ -14,7 +12,6 @@ public class FindingCubeRoot {
 		 * class should be named Solution.
 		 */
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(System.out));
 		int testCases = Integer.parseInt(bufferedReader.readLine().trim());
 		for (int i = 0; i < testCases; i++) {
 			long input = Long.parseLong(bufferedReader.readLine().trim());

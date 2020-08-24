@@ -59,7 +59,6 @@ public class PairwithDifferenceK {
 	}
 
 	public static void checkSumPairsBS(int[] input, int count, int sum) {
-		int low = 0, high = count;
 		for (int i = 1; i <= count; i++) {
 			int x = sum + input[i - 1];
 			if (binarySearch(input, i, count, x)) {

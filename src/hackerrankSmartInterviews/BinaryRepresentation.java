@@ -33,8 +33,9 @@ Sample Output 0
 1
 1111000
  */
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class BinaryRepresentation {
 

@@ -64,7 +64,7 @@ public class Computeapowerb {
 	public static void apowerb(long a, long b) {
 		long MOD = (long) (1e9 + 7);
 		long result = Long.parseUnsignedLong("1");
-		for (int i = 0; b > 0; i++) {
+		while (b > 0) {
 			if (b % 2 == 1) {
 				result = result * a % MOD;
 			}
