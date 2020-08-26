@@ -16,7 +16,9 @@ Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
  */
 public class TwoSum {
-	public int[] twoSum(int[] nums, int target) {
+	public static int[] twoSum(int[] nums, int target) {
+		char ch = 'a';
+		System.out.println(String.valueOf(ch-'a'));
 		Map<Integer, Integer> map = new HashMap<>();
 		for (int i = 0; i < nums.length; i++) {
 			int temp = target - nums[i];
@@ -30,5 +32,8 @@ public class TwoSum {
 		}
 
 		return nums;
+	}
+	public static void main(String[] args) {
+		System.out.println(twoSum(new int[10], 2));
 	}
 }
