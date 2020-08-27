@@ -3,6 +3,7 @@ package Leetcode;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -42,6 +43,11 @@ public class ThreeSum {
 					r--;
 			}
 
+		}
+		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+        Iterator<List<Integer>> i = result.iterator(); 
+        while(i.hasNext()){
+		    res.add((ArrayList<Integer>) i.next());
 		}
 		return result.stream().collect(Collectors.toList());
 	}
