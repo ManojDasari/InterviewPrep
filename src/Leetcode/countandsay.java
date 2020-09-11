@@ -17,7 +17,7 @@ Given an integer n where 1 ≤ n ≤ 30, generate the nth term of the count-and-
 Note: Each term of the sequence of integers will be represented as a string.
  */
 public class countandsay {
-	public String countAndSay(int n) {
+	public static String countAndSay(int n) {
 		if (n == 1)
 			return "1";
 		String previousString = countAndSay(n - 1);
@@ -26,7 +26,7 @@ public class countandsay {
 
 	}
 
-	public String getNextString(String previous) {
+	public static String getNextString(String previous) {
 		char current = previous.charAt(0);
 		StringBuilder stringBuilder = new StringBuilder();
 		int frequence = 1;
@@ -41,5 +41,9 @@ public class countandsay {
 		}
 		stringBuilder.append(frequence).append(current);
 		return stringBuilder.toString();
+	}
+
+	public static void main(String args[]) {
+		System.out.println(countAndSay(5));
 	}
 }
